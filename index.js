@@ -1,6 +1,6 @@
 const authConfig = {
   "siteName": "AnimeCenter",  // 网站名称
-  "siteIcon": "img/ico.png", //网站图标
+  "siteIcon": "https://s20.picofile.com/file/8443203284/icon.png", //网站图标
   "client_id": "202264815644.apps.googleusercontent.com",
   "client_secret": "X4Z3ca8xfWDb1Voo-F9a7ZxJ",
   "refresh_token": "1//09S2J7JbZ5FX1CgYIARAAGAkSNwF-L9Ir7erkpzPoIL-m32uQn0_isY154QXBrab7cO_ihwuLUYMwDsgbHmAbqoWT1y78Ga4hAy4",  
@@ -11,7 +11,7 @@ const authConfig = {
       name: "anime123",
       user: '',
       pass: "",
-      protect_file_link: true 
+      protect_file_link: false 
   },],
  
   "files_list_page_size": 50,
@@ -21,18 +21,23 @@ const authConfig = {
 };
 
 const themeConfig = {
-  "url": "//cdn.jsdelivr.net/gh/mahdikhosravi1383/goindex-yahallo",
+  "url": "//cdn.jsdelivr.net/gh/mahdikhosravi1383/bestgoindextheme",
   "theme": "dark", 
   "main_color": "blue-grey",
   "accent_color": "blue",
-  "avatar": "https://animecenter1.xyz/wp-content/themes/KelaketFilm/images/logo.png",
-  "bimg": "https://animecenter1.xyz/wp-content/uploads/2021/10/komi-san-wa-komyushou-desu-10677-thumbnail-196x290.jpg",
+  "avatar": "https://s20.picofile.com/file/8443203284/icon.png",
+  "bimg": "https://s21.picofile.com/file/8443203292/background.jpg",
   "menu_show": true,
   "menus": [
     {
       name: "Main Website",
-      url: "animecenter1.xyz"
+      url: "https://animecenter1.xyz"
     },
+        {
+      name: "Main Website",
+      url: "https://animecenter1.xyz"
+    },
+
   ],
   "view": "|mp4|webm|avi|bmp|jpg|jpeg|png|gif|m4a|mp3|flac|wav|ogg|mpg|mpeg|mkv|rm|rmvb|mov|wmv|asf|ts|flv|m3u8|",
   "player_dp": "|m3u8|flv|",
@@ -93,7 +98,7 @@ function html(current_drive_order = 0, model = {}) {
   <title>${authConfig.siteName}</title>
   <link rel="shortcut icon" href="${authConfig.siteIcon}" type="image/x-icon" />
   <style>
-    @import url(${themeConfig.url}/style.css);
+    @import url("https://cdn.jsdelivr.net/gh/mahdikhosravi1383/bestgoindextheme@main/style3.css");
   </style>
   <script>
     window.drive_names = JSON.parse('${JSON.stringify(authConfig.roots.map(it => it.name))}');
@@ -102,7 +107,7 @@ function html(current_drive_order = 0, model = {}) {
     window.ThemeConfig = JSON.parse('${JSON.stringify(themeConfig)}');
   </script>
   <script src="//cdn.jsdelivr.net/combine/gh/jquery/jquery@3.2/dist/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/mahdikhosravi1383/goindex-yahallo/app.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/mahdikhosravi1383/bestgoindextheme@latest/themes/dark/app1.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"></script>
 </head>
 <body>
