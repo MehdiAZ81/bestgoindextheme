@@ -1,4 +1,4 @@
-document.write('<link rel="stylesheet" href="' + ThemeConfig.url + '/dist/css/app.6461726b.css">');
+document.write('<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mahdikhosravi1383/bestgoindextheme@latest/css/app.6461726b.min.css">');
 document.write('<script src="//cdn.jsdelivr.net/npm/hls.js@1.0.7/dist/hls.min.js"></script>');
 document.write('<script src="//cdn.jsdelivr.net/npm/dashjs@4.0.1/dist/dash.all.debug.min.js"></script>');
 document.write('<script src="//cdn.jsdelivr.net/npm/flv.js@1.6.1/dist/flv.min.js"></script>');
